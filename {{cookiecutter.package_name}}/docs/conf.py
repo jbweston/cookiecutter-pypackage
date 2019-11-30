@@ -40,6 +40,7 @@ extensions = [
     "sphinx.ext.viewcode",  # View source code from documentation pages
     "sphinx.ext.napoleon",  # numpy-style docstrings
     "sphinxcontrib.apidoc",  # Run sphinx-apidoc when building
+    "jupyter_sphinx.execute",  # for execution of code snippets
     "m2r",
 ]
 # Add any paths that contain templates here, relative to this directory.

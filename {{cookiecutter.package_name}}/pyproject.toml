@@ -35,6 +35,7 @@ docs = [
     "sphinx-rtd-theme",
     "m2r",  # markdown support
     "sphinxcontrib.apidoc",  # run sphinx-apidoc when building docs
+    "jupyter_sphinx",   # for execution of code snippets in the documentation
 ]
 dev = [
     "flit",
