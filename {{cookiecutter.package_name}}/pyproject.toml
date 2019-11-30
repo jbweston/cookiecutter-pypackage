@@ -1,0 +1,43 @@
+[build-system]
+requires = ["flit_core >=2,<3"]
+build-backend = "flit_core.buildapi"
+
+[tool.flit.metadata]
+module = "{{cookiecutter.package_name}}"
+author = "{{cookiecutter.author_name}}"
+author-email = "{{cookiecutter.author_email}}"
+home-page = "https://github.com/{{cookiecutter.package_repo}}/"
+requires-python=">={{cookiecutter.python.versions | min}}"
+description-file="README.md"
+keywords = "{{cookiecutter.package_keywords}}"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 1 - Planning",
+    {%- for v in cookiecutter.python.versions %}
+    "Programming Language :: Python :: {{v}}",
+    {%- endfor %}
+]
+requires = [
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-flake8",
+    "pytest-mypy",
+    "pytest-black",
+    "hypothesis",
+    "tox",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "m2r",  # markdown support
+    "sphinxcontrib.apidoc",  # run sphinx-apidoc when building docs
+]
+dev = [
+    "flit",
+    "pre-commit",
+    "bump2version",
+]

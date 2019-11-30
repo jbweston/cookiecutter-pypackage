@@ -1,0 +1,12 @@
+{
+    "package_name": "my_package",
+    "package_description": "My new package",
+    "package_keywords": "",
+    "author_name": "Joseph Weston",
+    "author_email": "joseph@weston.cloud",
+    "author_github": "jbweston",
+    "package_repo" : "{{cookiecutter.author_github}}/{{cookiecutter.package_name}}",
+    "python": {
+        "versions": ["3.6", "3.7"]
+    }
+}
