@@ -7,6 +7,6 @@
     "author_github": "jbweston",
     "package_repo" : "{{cookiecutter.author_github}}/{{cookiecutter.package_name}}",
     "python": {
-        "versions": ["3.6", "3.7"]
+        "versions": ["3.6", "3.7", "3.8"]
     }
 }
